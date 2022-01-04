@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using OpenLayers with Vite</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin="">
+    </script> -->
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    #map {
+      width: 100%;
+      height: 900px;
+    }
+
+    #controller {
+      background: #ececec;
+      padding: 0.5rem;
+    }
+
+    #play,
+    #pause {
+      padding: 0rem 1rem;
+    }
+
+    #info {
+      padding-left: .5 rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map">
+
+  </div>
+  <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+    <button id="play" class="btn btn-primary btn-sm" type="button">
+      <i class="fa fa-play" style="padding: 0rem 1rem"></i>
+    </button>
+    <button id="pause" class="btn btn-primary btn-sm" type="button">
+      <i class="fa fa-pause" style="padding: 0rem 1rem"></i>
+    </button>
+    <span id="info" style="padding-left: 0.5rem;"></span>
+  </div>
+  <script type="module" src="./leaflet.js"></script>
+</body>
+
+</html>
